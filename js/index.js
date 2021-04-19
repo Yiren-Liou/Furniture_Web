@@ -338,7 +338,7 @@ function adminValiation(){
   let adminPassword = document.querySelector('#adminPassword').value;
 
   if(adminAccount == adminAccountKey && adminPassword == adminPwdKey){
-    location.href = '/admin.html';
+    location.href = 'https://yiren-liou.github.io/customerServerSide/admin';
   }else{
     const adminError = document.querySelector('.adminError');
     adminError.textContent = '請按找指示輸入帳號密碼呦';
