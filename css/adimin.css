@@ -1,0 +1,154 @@
+.fontSizeS {
+  font-size: 14px;
+}
+
+.fontSizeM {
+  font-size: 20px;
+}
+
+.fontSizeL {
+  font-size: 24px;
+}
+
+.fontSizeXL {
+  font-size: 28px;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, ul {
+  margin-bottom: 0;
+}
+
+a {
+  display: block;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-lightSecondary {
+  color: #6A33F8;
+}
+
+.text-secondaryColor {
+  color: #6A33FF;
+}
+
+.text-lighter {
+  color: #797979;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-grey {
+  background-color: #F8F8F8;
+}
+
+.bg-darkSecondary {
+  background-color: #301E5F;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.secondaryBtn {
+  border: 2px solid #6A33F8;
+  background: #fff;
+  color: #6A33F8;
+}
+
+.secondaryBtn:hover {
+  background-color: #6A33F8;
+  color: #fff;
+}
+
+.modal-content {
+  border-color: rgba(106, 51, 248, 0.1);
+}
+
+.modal-header {
+  background-color: rgba(106, 51, 248, 0.1);
+}
+
+.discartAllBtn {
+  display: table;
+  margin-left: auto;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+  padding: 4px 12px;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  background-color: transparent;
+}
+
+.discartAllBtn:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+}
+
+.orderPage-table {
+  width: 100%;
+  text-align: center;
+}
+
+.orderPage-table th, .orderPage-table td {
+  padding: 10px;
+  border: 1px solid #000000;
+}
+
+.delSingleOrder-Btn {
+  display: block;
+  background-color: #C44021;
+  color: #fff;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.delSingleOrder-Btn:hover {
+  opacity: 0.8;
+}
+
+.orderStatus {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.orderDone {
+  color: #797979;
+}
+
+.orderDone:hover {
+  color: #797979;
+}
+
+.orderUndone {
+  color: #0067CE;
+}
+
+.orderUndone:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=adimin.css.map */

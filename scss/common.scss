@@ -1,0 +1,97 @@
+// color
+$secondaryColor: #6A33FF;
+$darkSecondaryColor: #301E5F;
+$lightSecondaryColor: #6A33F8;
+$noticeColor: #C72424;
+$sectionColor: #F8F8F8;
+
+// font size
+$fontSizeS: 14px;
+$fontSizeM: 20px;
+$fontSizeL: 24px;
+$fontSizeXL: 28px;
+
+.fontSizeS{
+  font-size: $fontSizeS;
+}
+.fontSizeM{
+  font-size: $fontSizeM;
+}
+.fontSizeL{
+  font-size: $fontSizeL;
+}
+.fontSizeXL{
+  font-size: $fontSizeXL;
+}
+
+
+body{
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+
+h1,h2,h3,h4,h5,h6,p,span,ul{
+  margin-bottom: 0;
+}
+
+a{
+  display: block;
+  color:#000;
+}
+
+ul{
+  list-style: none;
+}
+.text-lightSecondary{
+  color: $lightSecondaryColor;
+}
+.text-secondaryColor{
+  color: $secondaryColor;
+}
+
+.text-lighter{
+  color: #797979;
+}
+
+.text-black{
+  color: #000;
+}
+
+.bg-black{
+  background-color: #000;
+}
+
+.bg-grey{
+  background-color: #F8F8F8;
+}
+
+.bg-darkSecondary{
+  background-color: $darkSecondaryColor;
+}
+
+section{
+  margin-bottom: 60px;
+}
+
+.sectionTitle{
+  font-size: $fontSizeXL;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.secondaryBtn{
+  border: 2px solid $lightSecondaryColor;
+  background: #fff;
+  color: $lightSecondaryColor;
+  &:hover{
+    background-color: $lightSecondaryColor;
+    color: #fff;
+  }
+}
+
+.modal-content{
+  border-color:rgba($lightSecondaryColor, 0.1);
+}
+.modal-header{
+  background-color: rgba($lightSecondaryColor, 0.1);
+}

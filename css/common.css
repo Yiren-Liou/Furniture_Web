@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap");
+.fontSizeS {
+  font-size: 14px;
+}
+
+.fontSizeM {
+  font-size: 20px;
+}
+
+.fontSizeL {
+  font-size: 24px;
+}
+
+.fontSizeXL {
+  font-size: 28px;
+}
+
+body {
+  font-family: 'Noto Sans TC', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, span, ul {
+  margin-bottom: 0;
+}
+
+a {
+  display: block;
+  color: #000;
+}
+
+ul {
+  list-style: none;
+}
+
+.text-lightSecondary {
+  color: #6A33F8;
+}
+
+.text-secondaryColor {
+  color: #6A33FF;
+}
+
+.text-lighter {
+  color: #797979;
+}
+
+.text-black {
+  color: #000;
+}
+
+.bg-black {
+  background-color: #000;
+}
+
+.bg-grey {
+  background-color: #F8F8F8;
+}
+
+.bg-darkSecondary {
+  background-color: #301E5F;
+}
+
+section {
+  margin-bottom: 60px;
+}
+
+.sectionTitle {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+
+.secondaryBtn {
+  border: 2px solid #6A33F8;
+  background: #fff;
+  color: #6A33F8;
+}
+
+.secondaryBtn:hover {
+  background-color: #6A33F8;
+  color: #fff;
+}
+
+.modal-content {
+  border-color: rgba(106, 51, 248, 0.1);
+}
+
+.modal-header {
+  background-color: rgba(106, 51, 248, 0.1);
+}
+/*# sourceMappingURL=common.css.map */

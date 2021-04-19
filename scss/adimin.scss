@@ -1,0 +1,60 @@
+@import 'common.scss';
+
+.discartAllBtn {
+  display: table;
+  margin-left: auto;
+  margin-bottom: 1.25rem;
+  text-decoration: none;
+  padding: 4px 12px;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 5px;
+  font-size: 1.25rem;
+  background-color: transparent;
+  &:hover{
+    background-color: #000000;
+    color: #FFFFFF;
+  }
+}
+
+.orderPage-table{
+  width: 100%;
+  text-align: center;
+  th,td{
+    padding: 10px;
+    border: 1px solid #000000;
+  }
+}
+
+.delSingleOrder-Btn {
+  display: block;
+  background-color: #C44021;
+  color: #fff;
+  border: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin: 0 auto;
+  &:hover{
+    opacity: 0.8;
+  }
+}
+
+.orderStatus {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
+
+.orderDone{
+  color: #797979;
+  &:hover {
+    color: #797979;
+  }
+}
+
+.orderUndone{
+  color:#0067CE;
+  &:hover {
+    text-decoration: underline;
+  }
+}
