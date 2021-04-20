@@ -9,6 +9,8 @@ const headersToken = {
 const orderList = document.querySelector('.orderPage-table');
 const discartAllBtn = document.querySelector('.discartAllBtn');
 const orderStatus = document.querySelector('.orderStatus');
+const modal = document.querySelector('.modal');
+const orderDetailList = document.querySelector('.orderDetailList');
 
 discartAllBtn.addEventListener('click', delAllOrder);
 orderList.addEventListener('click', delOneOrder);
@@ -70,7 +72,7 @@ function showOrderList(){
     orderList.innerHTML = orderItem;
     return;
   }
-  orderData.forEach(function(item){
+  orderData.forEach(function(item, index){
     // 訂單時間轉換
     let orderDate = new Date(Number(item.createdAt*1000));
     orderDate = orderDate.toLocaleDateString("zh-TW");
@@ -92,7 +94,9 @@ function showOrderList(){
         </td>
         <td>${item.user.address}</td>
         <td>${item.user.email}</td>
-        <td>${orderProducts}</td>
+        <td>
+          <button type="button" class="OrderDetailsBtn btn btn-primary" data-bs-toggle="modal" data-bs-target="#order" data-id="${index}">訂單明細</button>
+        </td>
         <td class="text-center">${orderDate}</td>
         <td>
           <a href="#" data-orderID = "${item.id}" data-orderPaid = ${item.paid} class="orderStatus ${orderStatusColor}">${orderStatus}</a>
@@ -104,8 +108,44 @@ function showOrderList(){
     `;
     orderList.innerHTML = orderItem;
   });
+
+  // 綁定 訂單明細 按鈕
+  let orderDetailsBtn = document.querySelectorAll('.OrderDetailsBtn');
+  orderDetailsBtn.forEach(function(item){
+    item.addEventListener('click', function(e){
+      showOrderDetails(e);
+    });
+  });
 }
 //#endregion
+
+//#region 顯示訂單明細
+function showOrderDetails(e){
+  let index = e.target.dataset.id;
+  modal.id = `order${index}`;
+  let strModalLi = '';
+  let strSumary = '';
+  let totalPrice = 0;
+
+  orderData[index].products.forEach(function(item){
+    strModalLi += `
+      <tr>
+        <td>${item.title}</td>
+        <td class="text-center">${item.quantity}</td>
+        <td class="text-end">NT ${item.price.toLocaleString()}</td>
+      </tr>
+    `;
+    totalPrice += parseInt(orderData[index].total);
+  });
+  strSumary = `      
+    <tr>
+      <td class="text-end border-top" colspan="3">NT ${totalPrice.toLocaleString()}</td>
+    </tr>
+  `;
+  orderDetailList.innerHTML = strModalLi + strSumary;
+}
+//#endregion
+
 
 //#region 刪除單一訂單
 function delOneOrder(e){
@@ -196,7 +236,6 @@ function productsPieChart(){
   sellProductsList.sort(function(a,b){
     return a.totalPrice < b.totalPrice ? 1 : -1;
   }); 
-  console.log(sellProductsList);
   // 判斷產品數量是否大於2項
   let newSellProductsList = '';
   if(sellProductsList.length < 4){

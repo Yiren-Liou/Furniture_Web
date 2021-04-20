@@ -151,4 +151,19 @@ section {
 .orderUndone:hover {
   text-decoration: underline;
 }
+
+.orderDetailList td {
+  padding: .5rem 0;
+}
+
+.OrderDetailsBtn {
+  border: none;
+  color: #6A33F8;
+  background: #fff;
+}
+
+.OrderDetailsBtn:hover {
+  background-color: #6A33F8;
+  color: #fff;
+}
 /*# sourceMappingURL=adimin.css.map */

@@ -58,3 +58,19 @@
     text-decoration: underline;
   }
 }
+
+.orderDetailList{
+  td{
+    padding: .5rem 0;
+  }
+}
+
+.OrderDetailsBtn{
+  border: none;
+  color: $lightSecondaryColor;
+  background: #fff;
+  &:hover {
+    background-color: $lightSecondaryColor;
+    color: #fff;
+  }
+}
