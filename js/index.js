@@ -1,5 +1,5 @@
 const apiPath = 'yiren';
-const url = 'https://hexschoollivejs.herokuapp.com/api/livejs/v1';
+const url = 'https://livejs-api.hexschool.io/api/livejs/v1';
 
 const productList = document.querySelector('.jsProductList');
 const productSelect = document.querySelector('.jsProductSelect');
